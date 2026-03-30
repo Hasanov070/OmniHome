@@ -1,6 +1,6 @@
 package com.omnihome.factory;
 
-// ── LuxuryLine concrete products
+// LuxuryLine concrete products
 
 class LuxuryLight implements SmartLight {
     @Override
@@ -24,10 +24,8 @@ class LuxuryThermostat implements SmartThermostat {
 }
 
 // ── LuxuryFactory
+//  Concrete factory that produces the LuxuryLine device family
 
-/**
- * Concrete factory that produces the LuxuryLine device family.
- */
 public class LuxuryFactory implements DeviceFactory {
 
     @Override

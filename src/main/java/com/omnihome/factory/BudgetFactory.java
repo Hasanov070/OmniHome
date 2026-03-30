@@ -1,6 +1,6 @@
 package com.omnihome.factory;
 
-// ── BudgetLine concrete products ────────────────────────────────────────────
+// ── BudgetLine concrete products
 
 class BudgetLight implements SmartLight {
     @Override
@@ -23,11 +23,8 @@ class BudgetThermostat implements SmartThermostat {
     }
 }
 
-// ── BudgetFactory ────────────────────────────────────────────────────────────
-
-/**
- * Concrete factory that produces the BudgetLine device family.
- */
+// ── BudgetFactory
+//  Concrete factory that produces the BudgetLine device family.
 public class BudgetFactory implements DeviceFactory {
 
     @Override

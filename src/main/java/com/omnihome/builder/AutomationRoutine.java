@@ -13,7 +13,7 @@ public class AutomationRoutine {
     private final String       triggerTime;
     private final boolean      sendNotification;
 
-    /** Package-private: only RoutineBuilder may construct this. */
+//  Package-private: only RoutineBuilder may construct this
     AutomationRoutine(String name, List<String> devices,
                       String triggerTime, boolean sendNotification) {
         this.name             = name;

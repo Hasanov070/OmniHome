@@ -1,9 +1,7 @@
 package com.omnihome.adapter;
 
 /**
- * Task 3 — The Adaptee.
- * Legacy 1990s thermostat that only understands Fahrenheit integers.
- * We cannot modify this class .
+ * Task 3 — The Adapter.
  */
 public class GlorbThermostat {
 

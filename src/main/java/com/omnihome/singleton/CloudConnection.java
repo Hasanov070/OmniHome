@@ -1,8 +1,8 @@
 package com.omnihome.singleton;
 
-/**
- * Task 1: Thread-Safe Singleton using Initialization-on-Demand Holder idiom.
- */
+
+//Task 1: Thread-Safe Singleton using Initialization-on-Demand Holder idiom.
+
 public class CloudConnection {
 
     private final String apiKey;

@@ -6,8 +6,7 @@ import java.util.List;
 /**
  * Task 4 — Builder for {@link AutomationRoutine}.
  *
- * Eliminates the need for a telescoping constructor and validates
- * required fields before creating the product.
+
  */
 public class RoutineBuilder {
 

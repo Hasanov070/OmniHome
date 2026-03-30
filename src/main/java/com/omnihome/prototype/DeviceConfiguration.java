@@ -1,8 +1,8 @@
 package com.omnihome.prototype;
 
+// Task 5 — Prototype
+
 /**
- * Task 5 — Prototype.
- *
  * Implements {@link Cloneable} so device configurations can be duplicated
  * without knowing the concrete type.
  */
@@ -20,10 +20,7 @@ public class DeviceConfiguration implements Cloneable {
 
     // ── Prototype method
 
-    /**
-     * Returns an independent copy of this configuration.
-     * Changes to the clone do NOT affect the original.
-     */
+
     @Override
     public DeviceConfiguration clone() {
         try {

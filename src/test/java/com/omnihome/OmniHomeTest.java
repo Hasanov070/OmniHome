@@ -18,7 +18,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class OmniHomeTest {
 
-    // ── Task 1: Singleton ────────────────────────────────────────────────────
+    // ── Task 1: Singleton
 
     @Test
     @DisplayName("Singleton: same instance returned on repeated calls")
@@ -51,7 +51,7 @@ class OmniHomeTest {
         assertSame(ref1.get(), ref2.get(), "Concurrent calls must return the same instance");
     }
 
-    // ── Task 2: Abstract Factory ─────────────────────────────────────────────
+    // ── Task 2: Abstract Factory
 
     @Test
     @DisplayName("Factory: BudgetFactory creates correct types")
@@ -82,7 +82,7 @@ class OmniHomeTest {
         );
     }
 
-    // ── Task 3: Adapter ──────────────────────────────────────────────────────
+    // ── Task 3: Adapter
 
     /**
      * Captures fahrenheit passed to GlorbThermostat via a spy subclass.
@@ -124,7 +124,7 @@ class OmniHomeTest {
         assertInstanceOf(SmartThermostat.class, t);
     }
 
-    // ── Task 4: Builder ──────────────────────────────────────────────────────
+    // ── Task 4: Builder
 
     @Test
     @DisplayName("Builder: builds routine with all fields set")
@@ -169,7 +169,7 @@ class OmniHomeTest {
         );
     }
 
-    // ── Task 5: Prototype ────────────────────────────────────────────────────
+    // ── Task 5: Prototype
 
     @Test
     @DisplayName("Prototype: clone produces a different object reference")
@@ -201,7 +201,7 @@ class OmniHomeTest {
         assertEquals(original.getFirmwareVersion(), clone.getFirmwareVersion());
     }
 
-    // ── Task 6: Factory Adapter ──────────────────────────────────────────────
+    // ── Task 6: Factory Adapter
 
     @Test
     @DisplayName("FactoryAdapter: implements DeviceFactory interface")

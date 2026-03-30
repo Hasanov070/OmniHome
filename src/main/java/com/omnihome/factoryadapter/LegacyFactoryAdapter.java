@@ -7,25 +7,9 @@ import com.omnihome.factory.SmartThermostat;
 
 /**
  * Task: Factory Adapter — combines the Adapter and Abstract Factory patterns.
- *
- * <p><b>Problem:</b> {@link LegacyDeviceLibrary} is an incompatible third-party
- * factory.  Its products use different method names and conventions (Fahrenheit,
- * illuminate(), engage()…) and do NOT implement our SmartDevice interfaces.</p>
- *
- * <p><b>Solution:</b> {@code LegacyFactoryAdapter} implements {@link DeviceFactory}
- * (the Target interface) and internally delegates to {@link LegacyDeviceLibrary}
- * (the Adaptee).  Each factory method wraps the legacy product inside a small
- * anonymous adapter class that translates the call.</p>
- *
- * <pre>
- * «interface»                «class»                    «class» (Legacy)
- * DeviceFactory  ◁─────  LegacyFactoryAdapter  ──────►  LegacyDeviceLibrary
- *  createSmartLight()     createSmartLight()              spawnLamp()
- *  createSmartLock()      createSmartLock()               spawnDeadbolt()
- *  createSmartThermostat()createSmartThermostat()         spawnHVAC()
- * </pre>
- *
- * <p>Each returned product is itself a small adapter wrapping the raw legacy object.</p>
+ * {@link LegacyDeviceLibrary}
+ * {@link DeviceFactory}
+ * {@link LegacyDeviceLibrary}
  */
 public class LegacyFactoryAdapter implements DeviceFactory {
 
@@ -44,7 +28,6 @@ public class LegacyFactoryAdapter implements DeviceFactory {
 
     /**
      * Wraps {@link LegacyLamp} so it satisfies {@link SmartLight}.
-     * Translates: turnOn() → illuminate()
      */
     @Override
     public SmartLight createSmartLight() {
@@ -57,7 +40,6 @@ public class LegacyFactoryAdapter implements DeviceFactory {
 
     /**
      * Wraps {@link LegacyDeadbolt} so it satisfies {@link SmartLock}.
-     * Translates: lock() → engage()
      */
     @Override
     public SmartLock createSmartLock() {
